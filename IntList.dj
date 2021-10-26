@@ -1,20 +1,23 @@
 abstract class IntList {
   static final IntList EMPTY = new EmptyIntList();
   ConsIntList cons(int n) { return new ConsIntList(n, this); }
-  abstract boolean contains(int n);
+  /* abstract <return type> <method name> ( <parameter list> ); */
 }
 
 class EmptyIntList extends IntList {
-  boolean contains(int n) {
-    return false;
+  /*
+  boolean <return type> <method name> ( <parameter list> ) {
+    <code>
   }
+  */
 }
 
 class ConsIntList extends IntList {
   int first;
   IntList rest;
-  boolean contains(int n) {
-    if (n == first) return true;
-    else return rest.contains(n);
-   }
+  /*
+  boolean <return type> <method name> ( <parameter list> ) {
+    <code>
+  }
+  */
 }
